@@ -16,7 +16,10 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Testing');
+    return Inertia::render('Testing', [
+        'title' => 'News Portal',
+        'content' => 'Cuaca hari ini cerah',
+    ]);
 });
 
 // Route::get('/', function () {
